@@ -105,6 +105,7 @@ export default function SignUp() {
                   fill
                 />
               </div>
+
               <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
                 Create An Account
               </h2>
@@ -211,25 +212,25 @@ export default function SignUp() {
                 </div>
 
                 <div className="mt-6 grid grid-cols-2 gap-4">
-                  <a
-                    href="#"
-                    className="flex w-full items-center justify-center gap-3 rounded-md bg-[#1D9BF0] px-3 py-1.5 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D9BF0]"
+                  <button
+                    onClick={() => signIn("google", { callbackUrl: "/" })}
+                    className="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-1.5 text-black drop-shadow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D9BF0]"
                   >
                     <FcGoogle size={24} />
                     <span className="text-sm font-semibold leading-6">
-                      Twitter
+                      Google
                     </span>
-                  </a>
+                  </button>
 
-                  <a
-                    href="#"
-                    className="flex w-full items-center justify-center gap-3 rounded-md bg-[#24292F] px-3 py-1.5 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#24292F]"
+                  <button
+                    onClick={() => signIn("google", { callbackUrl: "/" })}
+                    className="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-1.5 text-black drop-shadow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#24292F]"
                   >
                     <FaGithub size={24} />
                     <span className="text-sm font-semibold leading-6">
                       GitHub
                     </span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

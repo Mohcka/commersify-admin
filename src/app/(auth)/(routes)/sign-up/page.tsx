@@ -96,11 +96,11 @@ export default function SignUp() {
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
               <img
-                className="h-10 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-10 w-auto dark:invert"
+                src="https://tailwindui.com/img/logos/mark.svg"
                 alt="Your Company"
               />
-              <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">
+              <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
                 Create An Account
               </h2>
             </div>
@@ -114,7 +114,7 @@ export default function SignUp() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium leading-6 text-gray-900"
+                      className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100"
                     >
                       Username
                     </label>
@@ -136,7 +136,7 @@ export default function SignUp() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium leading-6 text-gray-900"
+                      className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100"
                     >
                       Email address
                     </label>
@@ -159,7 +159,7 @@ export default function SignUp() {
                   <div>
                     <label
                       htmlFor="password"
-                      className="block text-sm font-medium leading-6 text-gray-900"
+                      className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100"
                     >
                       Password
                     </label>
@@ -199,7 +199,7 @@ export default function SignUp() {
                     <div className="w-full border-t border-gray-200" />
                   </div>
                   <div className="relative flex justify-center text-sm font-medium leading-6">
-                    <span className="bg-white px-6 text-gray-900">
+                    <span className="bg-white dark:bg-[hsl(var(--background))] px-6 text-gray-900 dark:text-gray-100">
                       Or continue with
                     </span>
                   </div>

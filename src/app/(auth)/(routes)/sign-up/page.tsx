@@ -1,8 +1,10 @@
 "use client";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
+import { Store } from "lucide-react";
 import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -98,12 +100,8 @@ export default function SignUp() {
         <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
-              <div className="h-10 w-auto dark:invert">
-                <Image
-                  src="https://tailwindui.com/img/logos/mark.svg"
-                  alt="Your Company"
-                  fill
-                />
+              <div className="h-10 w-auto ">
+                <Store size={40} />
               </div>
 
               <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
@@ -190,10 +188,19 @@ export default function SignUp() {
                       type="submit"
                       className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Sign in
+                      Sign Up
                     </button>
                   </div>
                 </form>
+                <p className="mt-10 text-center text-sm text-gray-500">
+                  Alreay a member?{" "}
+                  <Link
+                    href="/sign-in"
+                    className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+                  >
+                    Sign In
+                  </Link>
+                </p>
               </div>
 
               <div className="mt-10">

@@ -191,7 +191,7 @@ export default function SignUp() {
                   </button>
 
                   <button
-                    onClick={() => signIn("google", { callbackUrl: "/" })}
+                    onClick={() => signIn("github", { callbackUrl: "/" })}
                     className="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-1.5 text-black drop-shadow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#24292F]"
                   >
                     <FaGithub size={24} />

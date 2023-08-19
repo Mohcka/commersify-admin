@@ -5,6 +5,8 @@ import StoreSwitcher from "@/components/store-switcher";
 import { MainNav } from "@/components/main-nav";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { prisma } from "@/lib/db";
+import { signOut } from "next-auth/react";
+import SignOutButton from "./SignOutButton";
 
 const Navbar = async () => {
   const { currentUser } = await serverAuth();
@@ -29,9 +31,7 @@ const Navbar = async () => {
           <ThemeToggle />
 
           {/* Signout button */}
-          <button className="text-sm font-medium text-gray-500 hover:text-gray-700">
-            Sign out
-          </button>
+          <SignOutButton />
         </div>
       </div>
     </div>
